@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    box-sizing: border-box !important;
+}
+
+body{
+    background-image: url(../Img/bg.png);
+    height: 100%;
+}
+nav{
+    background-color: #2f353a;
+    height: 80px;
+    width: 100%;
+
+}
+nav .contenedor{
+    margin: 0 auto;
+    width: 1170px;
+    padding: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    justify-items: center;
+
+}
+
+.botones{
+    display: flex;
+}
+.botones a{
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    width: 100px;
+    text-align: center;
+
+}
+/* No hay cojones con el form*/
+
+/*Comienza el body*/
+
+.principal{
+    background-image: url(../Img/bg.heic);
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    width: 1170px;
+    box-sizing: border-box;
+
+}
+
+.contenedor{
+    width: 100%;
+}
+
+.izquierda{
+    height: 100%;
+    width: 30%;
+    min-width: 120px;
+    float: left;
+
+
+}
+
+.listaAnime{
+    list-style: none;
+    background-color: white;
+    max-width: 296px;
+    border-radius: 5%;
+}
+.listaAnime li{
+    padding: 5px;
+}
+
+.derecha{
+    height: 100%;
+    width: 68%;
+    min-width: 120px;
+    margin: 5px 10px;
+    float: right;
+    
+}
+
+ul li img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 5%;
+}
+
+
+.titulos{
+    position: relative;
+    margin-bottom: 20px;
+    display: block;
+    justify-content: space-between;
+}
+
+h3{
+    display: block;
+}
+
+.hoy{
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    color: blue;
+}
+#facebook{
+    max-width: 296px;
+    max-height: 97px;
+    
+
+}
+ul{
+    margin: 0px -96px 0px 0px;
+    border-radius: 5%;
+}
+.cajaAnime{
+    width: 21%;
+    margin: 4px;
+    height: 125px;
+    list-style: none;
+    display: flex;
+    display: inline-table;
+    box-sizing: border-box;
+    
+    
+}
+
+.cajaAnime2{
+    width: 21%;
+    margin: 4px;
+    list-style: none;
+    min-width: 75px;
+    min-height: 35px;
+    display: flex;
+    display: inline-table;
+    
+    
+}
+/*poner el a a la derecha alineado
+*/
+
+
+
+@media (max-width: 1200px){
+    nav .contenedor{
+        width: 1000px;
+    }
+    .principal{
+        width: 1100px;
+    }
+    .cajaAnime{
+        width: 200px;
+        height: 150px;
+        display: flex;
+        display: inline-table;
+        flex-wrap: wrap;
+    }
+    .cajaAnime2{
+        width: 200px;
+        height: 150px;
+        display: flex;
+        display: inline-table;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (max-width: 567px){
+    nav .contenedor{
+        width: 100%;
+    }
+    .principal{
+        width: 100%;
+    }
+    .izquierda{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .derecha{
+        width: auto;
+    }
+    .cajaAnime{
+        width: 48%;
+        min-width: 75px;
+        display: flex;
+        display: inline-table;
+        flex-wrap: nowrap;
+    }
+    .hoy{
+        display: block;
+        left: 0;
+    }
+    .cajaAnime2{
+        width: 48%;
+        height: 150px;
+        display: flex;
+        display: inline-table;
+        flex-wrap: wrap;
+    }
+}
+
+/*que no se reduzca al quedar 2
+Poner al 100% el izquierda*/
+.footer{
+    background-color: #2f353a;
+    color: white;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
